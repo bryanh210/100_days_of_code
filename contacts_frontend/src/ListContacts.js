@@ -62,9 +62,9 @@ clearQuery= () =>{
     showingContacts.sort(sortBy('name'))
 
     return(
-      <div className = 'List-contacts'>
+      <div className = 'list-contacts'>
 
-        <div className= 'List-contacts-top'>
+        <div className= 'list-contacts-top'>
           <input
              className= 'search-contacts'
              type= 'text'
