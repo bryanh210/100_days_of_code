@@ -63,14 +63,19 @@ clearQuery= () =>{
     return(
       <div className = 'List-contacts'>
 
-        <div clasName= 'List-contacts-top'>
+        <div className= 'List-contacts-top'>
           <input
              className= 'search-contacts'
              type= 'text'
              placeholder= 'Search contacts'
-             value={this.state.query}
-             onChange={(event) => this.updateQuery(event.target.value)}
+             value={query}
+              onChange={(event) => this.updateQuery(event.target.value)}
             />
+            <a
+                href='#create'
+                onClick={this.props.onNavigate}
+                className='add-contact'
+             >Add Contact</a>
           </div>
 
           {showingContacts.length !== contacts.length &&(
