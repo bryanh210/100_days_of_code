@@ -39,8 +39,8 @@ state = {
   query: ''
 }
 
-updateQuery = (query1) =>{
-  this.setState({ query: query1.trim() })
+updateQuery = (query) =>{
+  this.setState({ query: query.trim() })
 }
 
 clearQuery= () =>{
