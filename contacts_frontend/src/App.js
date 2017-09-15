@@ -25,6 +25,7 @@ removeContact = (contact) =>{
   ContactsAPI.remove(contact)
 }
 
+//this is for the backend. CreateContact is for the front end
 createContact(contact){
   ContactsAPI.create(contact).then((contact) =>{
     this.setState(state =>({
